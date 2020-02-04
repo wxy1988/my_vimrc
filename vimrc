@@ -35,13 +35,16 @@ set nu
 "括号匹配
 set showmatch
 
+set hlsearch
+
 set autoindent
 set smartindent
 set cindent
 set tabstop=2
-set softtabstop=2
+set softtabstop=0
 set shiftwidth=2
 set expandtab
+set smarttab
 
 set backspace=indent,eol,start
 
