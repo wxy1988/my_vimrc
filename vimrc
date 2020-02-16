@@ -16,6 +16,9 @@ Plug 'https://github.com/vim-scripts/a.vim.git'
 Plug 'https://github.com/qpkorr/vim-bufkill.git'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'davidhalter/jedi-vim'
+Plug 'ervandew/supertab'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Initialize plugin system
 call plug#end()
 
@@ -105,3 +108,6 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 if !isdirectory(s:vim_tags)
    silent! call mkdir(s:vim_tags, 'p')
 endif
+
+" Load rope plugin
+let g:pymode_rope = 0
